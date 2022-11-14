@@ -1,0 +1,11 @@
+1. How to display images in title bar?
+   Majority of wesites add icon or image logo in the title bar. The icon logo is called favicon. Using following steps images an be displayed in the title
+   bar:
+   i. Choose the image and upload the file to the host directory.
+   ii. Specify the image you want to use as a favicon in the code of the website. Add the following link to your <head> section:
+       <head>
+        <link rel="icon" href="icon.jpg">
+       </head>  
+
+2.  What is the purpose of "alt" attribute of img tag?
+    It specifies an alternate text for an image, if the image cannot be displayed. 
