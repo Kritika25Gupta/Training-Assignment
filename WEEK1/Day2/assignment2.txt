@@ -1,0 +1,14 @@
+1. How to apply style to first letter of the paragraph?
+   To apply style to first letter of the paragraph ::first-letter is used. Example:
+   p::first-letter
+            {
+                color:green;
+                font-size: 200%;
+            }
+   Where p is the paragraph tag
+
+2. Why do we use  ~  and >  symbols in css selectors?
+   The symbol '~' is a general sibling combinator. It selects all the elements after the element and the symbol '>'
+   is applicable only for the Direct child of the container. 
+   div ~ p: Here ~ symbol selects every <p> element that is preceded by a <div> element
+   div > p: Here > symbol selects all <p> elements where the parent is a <div> element
