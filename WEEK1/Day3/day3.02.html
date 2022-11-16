@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <style>
+            .encrypt{
+                border:2px solid skyblue;
+                margin:auto;
+                border-radius: 0px;
+                text-align: center;
+                background-color: skyblue;
+                width: 600px;
+                height: 50px;
+            }
+            .details{
+                border:2px solid white;
+                margin:auto;
+                border-radius: 0px;
+                text-align: left;
+                background-color: white;
+                width: 600px;
+                height: 220px;
+            }
+            .grey{
+                border:2px solid lightgray;
+                margin:auto;
+                border-radius: 0px;
+                text-align: center;
+                background-color: lightgray;
+                width: 600px;
+                height: 70px; 
+            }
+            .submit{
+                margin:4px;
+                border-radius: 1px;
+                text-align: center;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="encrypt">
+            <br/>
+            <span style="font-size: 20px; padding: auto; color: white;"><img src=https://isssource.com/wp-content/uploads/2020/08/081020smart-lock.png height="15px", width="15px" />  This is a secure 128-bit SSL Encrypted payment. You're safe.</span>
+        </div>
+        <form  action="login.php" method="post">
+            <div class="details">
+                    <br/>
+                    <input type="radio" id="r1" name="r1" value="CC" />
+                    <label style="color: skyblue;">Credit Card (Visa,Mastercard) </label>
+                    <img src=https://th.bing.com/th/id/OIP.KIo30gk_ctvQbvw967OcAwHaGE?pid=ImgDet&rs=1 height="20px", width="20px" />
+                    <img src=https://pngimg.com/uploads/mastercard/mastercard_PNG23.png height="20px", width="20px" />
+                    <input type="radio" id="r2" name="r2" value="PP" />
+                    <label style="color: skyblue;">PayPal        </label>
+                    <img src=https://logos-download.com/wp-content/uploads/2016/03/PayPal_horizontally_Logo_2014.png height="20px", width="40px" />
+                    <br/><br/>
+                    <label style="color: skyblue;">Card number </label>
+                    <label style="font-size: 10px; color: skyblue;">The 16 digits in front of your card</label><br/>
+                    <input type="text" id="t1" name="t1" style="height:40 px; width: 600px;" />
+                    <br/><br/>
+                    <label style="color: skyblue;">Expiration date </label>
+                    <label style="color: skyblue; margin:55px;">CVV2/CVC2 </label><br/>
+                    <select  id="s1" name="s1">
+                        <option>Month</option>
+                        <option>January</option>
+                        <option>February</option>
+                        <option>March</option>
+                        <option>April</option>   
+                        <option>May</option>
+                        <option>June</option>
+                        <option>July</option>
+                        <option>August</option>
+                        <option>September</option>
+                        <option>October</option>
+                        <option>November</option>
+                        <option>December</option>
+                    </select>
+                    <select id="s2" name="s2">
+                        <option>Year</option>
+                        <option>2022</option>
+                        <option>2023</option>
+                        <option>2024</option>
+                        <option>2025</option>
+                        <option>2026</option>   
+                        <option>2027</option>
+                        <option>2027</option>
+                    </select> 
+                    <input type="text" id="t2" name="t2" style="height:40 px; width: 100px;" />
+                    <label style="margin:30px; font-size: 10px; color: lightblue; font-weight: bold;">The last 3 digits displayed on the back of your card</label>
+                    <br/><br/>
+                    <label style="color: skyblue;">Full Name on a card </label>
+                    <input type="text" id="t3" name="t3" style="height:40 px; width: 600px;" />  
+            </div>
+            <div class="grey">
+                <br/>
+                <span style="font-size: 20px; padding: auto; color: black;">You will be charged $29.00 every month</span>
+            </div>
+            <div class="submit">
+                <input type="submit" value="Complete Transaction" style="height:50px; width:300px; background-color:orange; border: orange;color: white;"/>
+            </div>
+        </form>
+    </body>
+</html>

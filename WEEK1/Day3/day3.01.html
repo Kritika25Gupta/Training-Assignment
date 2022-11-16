@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <style>
+        div{
+            border:2px solid lightsalmon;
+            margin:auto;
+            border-radius: 0px;
+            text-align: center;
+            background-color: lightsalmon;
+            width: 600px;
+            height: 80px;
+            line-height: 5px;
+        }
+        .details{
+            border:2px gray;
+            margin:auto;
+            border-radius: 0px;
+            background-color: lightgray;
+            text-align: left;
+            width: 600px;
+            height: 420px;
+            line-height:25px;
+            padding-left: 5px;
+        }
+        .submit{
+            border:2px solid red;
+            margin:auto;
+            border-radius: 0px;
+            background-color: red;
+            text-align: left;
+            width: 600px;
+            height: 50px;
+        }
+    </style>
+    </head>
+    <body>
+        <div>
+            <h4 style= "color:black; text-align: center;">WELCOME TO ITALIAN PIZZA!</h4>
+            <h5 style= "color:black; text-align: center;">We deliver pizza in 40 minutes max. If not - Pizza's on us!</h5>
+        </div>
+        <form  action="login.php" method="post">
+            <div  class="details">
+                <label>Email : </label><br/>
+                <input type="text" id="t1" name="t1" />
+                <br/> <br/>
+                <label>Phone : </label><br/>
+                <input type="text" placeholder="Area" id="t2" name="t2" />
+                <input type="text" placeholder="Local" id="t3" name="t3" />
+                <input type="text" placeholder="Local" id="t4" name="t4" />
+                <br/> <br/>
+                <label>Number of Slices : </label><br/>
+                <input type="text" id="t5" name="t5" />
+                <br/><br/>
+                <label>Pizza Size </label><br/>
+                <input type="radio" id="r1" name="r1" value="8-inch" />
+                <label>8-inch</label>
+                <input type="radio" id="r2" name="r1" value="10-inch" />
+                <label>10-inch</label>
+                <input type="radio" id="r3" name="r1" value="12-inch" />
+                <label>12-inch</label>
+                <input type="radio" id="r4" name="r1" value="14-inch" />
+                <label>14-inch</label>
+                <br/><br/>
+                <label>Toppings </label><br/>
+                <input type="checkbox" id="ck1" name="ck1" value="Pepperoni" />
+                <label>Pepperoni</label>
+                <input type="checkbox" id="ck2" name="ck2" value="Onions" />
+                <label>Onions</label>
+                <input type="checkbox" id="ck3" name="ck3" value="Mushrooms" />
+                <label>Mushrooms</label>  
+                <input type="checkbox" id="ck4" name="ck4" value="Sausage" />
+                <label>Sausage</label> 
+                <br/><br/> 
+                <label style="color:red; font-weight: bold;" > * </label>
+                <input type="checkbox" id="ck4" name="ck4" value="asterik" /> 
+                <label>I agree to the TERMS AND CONDITIONS</label>           
+                <br/><br/>
+            </div>
+            <div class="submit">
+                <input type="submit" value="Order Now" style="height:50px; width:600px; background-color: red; border: red;"/>
+            </div>
+        </form>
+    </body>
+</html>
