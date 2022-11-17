@@ -1,0 +1,16 @@
+1. What is differences between <head> and  <header> tags?
+   <head> provides general information about the document,including style, its title and links to/definitions of 
+   scripts and stylesheets and metadata. 
+   It is a new tag in html5. <header> represents group of introductory or navigational aids.It contains heading 
+   elements, logo, wrapped section header, search form and so on.
+
+2. How to allow only numbers in textbox?
+   a) By using javscript code, it only includes numeric value with the help of ASCII code (<input type="text">)
+   b) By simply writing <input type="number">
+
+3. What is cookies in web applications? Why do we use?
+   A cookie is a piece of data from a website that is stored within a web browser so that the website can retrieve
+   it at a later time. Cookies are used to tell the server that users have returned to that website again. Whenever
+   the user returns to a website, cookies provides information and allows the site to display selected settings and
+   targeted content. They store information such as shopping cart contents, login credentials etc.
+   
