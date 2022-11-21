@@ -1,0 +1,13 @@
+1. Why do you use position property in CSS?
+   The position property specifies the type of positioning method used for an element.
+   There are five different position values:static,relative,fixed,absolute,sticky.
+
+2. What is the difference between position property values :  absolute / relative;
+   Absolute: absolute is positioned relative to the nearest positioned ancestor 
+   Relative: relative is positioned relative to its normal position. If there is no parent tag then position is 
+   calculated according to the adjacent tag.
+
+5. How to hide an element uisng CSS?
+   We can hide an element using the following CSS properties 
+   display:none- removes the entire element from the page but may affect the layout of the page.
+   visibility:hidden- hides element keeping the space empty and the layout same.
