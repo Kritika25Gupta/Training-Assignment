@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <style>
+            div
+            {
+                width:50%;
+                margin:auto;
+            }
+            #form1
+            {
+                font-size: 20px;
+                position:relative;
+                left:40px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 align="center">Bank Account Opening Form</h1>
+        <hr/>
+        <div>
+        <fieldset>
+        <form  id="form1" action="Register.php" autocomplete="off" method="GET">
+        <span style="text-align:left;">Name On Account</span><span style="color: red; font-weight:bold;">  *</span><br>
+		<input type="text"  placeholder="First Name" required name="t1" style="width: 500px; border-radius: 0px; height:30px;"  /><br><br>
+        <input type="text"  placeholder="Middle Name" required name="t2" style="width: 500px; border-radius: 0px; height:30px;"   /><br><br>
+        <input type="text"  placeholder="Last Name" required name="t3" style="width: 500px; border-radius: 0px; height:30px;"   />
+		<br></br>
+        <span style="text-align:left;">Account Number</span><span style="color: red; font-weight:bold;">  *</span><br>
+        <input type="text" autofocus pattern="\d{14}"  required name="t4" style="width: 500px; border-radius: 0px; height:30px;"  /><br><br>
+        <span style="text-align:left;">Account Type</span><br>
+        <input type="radio" name="r1" value="Current Account" /><span>Current Account</span><br>
+        <input type="radio" name="r2" value="Saving Account" /><span>Saving Account</span>
+        <br><br>
+        <span style="text-align:left;">Address</span><span style="color: red; font-weight:bold;">  *</span><br>
+        <input type="text" placeholder="Please Enter Full Address" required name="t5" style="width: 500px; border-radius: 0px; height:40px;"  /><br><br>
+        <input type="text" placeholder="City" required name="t6" style="width: 500px; border-radius: 0px; height:30px;"  /><br><br>
+        <input type="text" placeholder="State" required name="t7" style="width: 500px; border-radius: 0px; height:30px;"  /><br><br>
+        <input type="text" placeholder="Pincode" required name="t8" style="width: 500px; border-radius: 0px; height:30px;"  /><br><br>
+        <span style="text-align:left;">Occupation</span><br>
+        <select  id="s1" name="s1" style="width: 500px; border-radius: 0px; height:30px;">
+            <option>Private Sector</option>
+            <option>Government job</option>
+            <option>Freelancer</option>
+            <option>Businessman</option>
+            <option>Self Employed</option>
+        </select><br><br>
+        <span style="text-align:left;">Phone Number</span><span style="color: red; font-weight:bold;">  *</span><br>
+        <select  id="s1" name="s1" required style="width: 500px; border-radius: 0px; height:30px;">
+            <option>Home</option>
+            <option>Office</option>
+            <option>Personal</option>
+        </select><br><br>
+        <input type="text" placeholder="Phone Number" required name="t9" style="width: 500px; border-radius: 0px; height:30px;"  /><br><br>
+        <input type="submit"  formaction="Update.php"   formmethod="post" formnovalidate value="Submit" style="width: 500px; border-radius: 0px; height:30px; background-color: blue; color: white;font-weight: bold;" /><br>
+        <input  type="checkbox" name="ck1" value="Yes" /><span style="color: red; font-weight:bold;">*</span><span>  I agree to the terms and conditions</span>
+        </form>
+        </fieldset>
+        </div>
+    </body>
+</html>

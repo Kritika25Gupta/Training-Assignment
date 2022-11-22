@@ -1,0 +1,11 @@
+1. What is The Viewport?
+   Viewport is the user's visible area of a web page. To take control over the viewport, <meta> tag is used.
+   SYNTAX of <meta> tag:
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   This tag is used for giving the browser instructions on how to control the web page's dimensions and scaling.
+  
+   width=device-width:set's the width of the page according to the device's screen.
+   initial-scale=1.0: sets the initial zoom level when the page is first loaded.
+   USES: Before tablets and mobile phones webpages were designed for computer only and they had a fixed and static
+   design but later on when the new devices were introduced, fixed we pages were too large to fit the viewport and 
+   therefore the tag is used to scale down the entire web page according to the device.
