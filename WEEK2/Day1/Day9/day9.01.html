@@ -1,0 +1,101 @@
+<html>
+	<head>
+        <style>
+            div
+            {
+                width:500px;
+                position:relative;
+                left:300px;
+            }
+        </style>
+    </head>
+	<body>
+		<h3 align="center">Storing Customer Data in LocalStorage</h3>
+		<hr/>
+        <div>
+		<fieldset>
+			<legend>Customer Data</legend>
+			Customer name  :  <input type="text" id="cn"  name="cn"  />
+			<br/><br/>
+			
+			Joined Date  :  <input type="date" id="jd"  name="jd"  />
+			<br/><br/>
+			
+			Favourite Color  :  <input type="color" id="fc"  name="fc"  />
+			<br/><br/>
+			
+			<input type="button"  value="Save Customer Data"   onclick="fn_saveData()" />
+			<input type="button"  value="Delete Customer Data"  onclick="fn_deleteData()" />
+			
+		</fieldset>
+		
+		<br/><br/>
+		
+		<fieldset>
+			<input type="button"  value="Get Customer Data"   onclick="fn_getData()" />
+			<p  id="p1"></p>
+		</fieldset>
+        </div>
+		
+		
+		<script>
+				
+				function  fn_saveData()
+				{
+					 	// 1.  Get data from input fields
+						var  txtcn  =  document.getElementById("cn");
+						var  txtjd  =  document.getElementById("jd");
+						var  txtfc =  document.getElementById("fc");
+						
+						// 2.  Create object with input fields values
+						var  dataObj = {};
+						dataObj.cn =  txtcn.value;
+						dataObj.jd =  txtjd.value;
+						dataObj.fc =  txtfc.value;
+						
+						// 3. Convert the object into JSON string
+						var  resultStr  =  JSON.stringify(  dataObj );
+												
+						// 4.  Store the string in localStorage		
+						localStorage.setItem("customerData", resultStr);
+						alert("Customer Data stored in localStorage");
+				}
+				
+			
+				function   fn_deleteData()
+				{
+					 localStorage.removeItem("userData");						
+					alert("User Data removed from  localStorage");
+				}
+				
+		
+				function fn_getData()
+				{
+				 	
+					// 1.  Reading data from localStorage				
+					var  dataStr  =  localStorage.getItem("customerData");		 
+					if(dataStr == null)
+					{
+							var  paraObj  =  document.getElementById("p1");
+							paraObj.innerHTML = "";
+							
+							alert("There is no user data in localStorage");
+							return;	// exit from the function 
+					}
+					
+					// 2.  Convert JSON string into object	
+					var dataObj =  JSON.parse( dataStr);
+					
+					// 3.  Access html elements to display user data
+					var  paraObj  =  document.getElementById("p1");
+										
+					// 4.  Show user details
+					paraObj.innerHTML =  dataObj.cn + " , " + dataObj.jd +  " , "  + dataObj.fc;
+				}				
+		
+		</script>
+		
+		
+	</body>
+
+</html>

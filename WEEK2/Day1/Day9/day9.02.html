@@ -1,0 +1,30 @@
+<html>
+    <head></head>
+    <body>
+        <link rel="day9.01.html">
+    </body>
+    <fieldset>
+        <h1 align="center" id="p1"></h1><br><br>
+        <h2 align="center" id="p2"></h2><br><br>
+    </fieldset>
+    <script>
+        var data_Str = localStorage.getItem("customerData");
+        var dataStr=JSON.parse(data_Str);
+        if(dataStr == undefined)
+            {
+                var paraObj = document.getElementById("p1");
+                paraObj.innerHTML = "Welcome to Guest User";
+                var paraObj2 = document.getElementById("p2");
+                paraObj2.innerHTML = "Date is empty";
+            }
+        else
+            {
+                var paraObj = document.getElementById("p1");
+                var paraObj2 = document.getElementById("p2");
+                paraObj.innerHTML = "Hello " + dataStr.cn + ", Welcome to Burger Mania"; 
+                paraObj2.innerHTML = "Joining Date : "+ dataStr.jd;
+                document.body.style.backgroundColor=dataStr.fc;
+            }
+    </script>
+
+</html>
