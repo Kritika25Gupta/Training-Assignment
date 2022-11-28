@@ -1,0 +1,13 @@
+1. How to add or remove CSS classes to html elements using JavaScript?
+   classList is used to add or remove css classes to html elements. 
+   To add an element .classList.add(" ") is used  and to remove an element .classList.remove(" ") is used.
+
+2. What is CDN? What are the advantages of using CDN urls?
+   A Content Delivery Network (CDN) is a collection of computers that keep data copies at several network nodes.
+   A CDN's primary function is to provide material via a network of servers securely and efficiently. These 
+   networks enhance the security, performance, and availability of material. They're also utilized to track 
+   network traffic and collect user analytics.
+
+3. How to align justify using Bootstrap?
+   Bootstrap 5 does not provide the feature of justify as it may look aesthetically pleasing but it has uneven word
+   spacing. 
