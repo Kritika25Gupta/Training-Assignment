@@ -1,0 +1,15 @@
+1. What is Clearfix class? Why do we use?
+   It is a solution which deals with a bug that occurs when two floated elements are stacked next to each other.
+   It easily fixes the floated content within a container.
+
+2. How to hide the elements using Bootstrap?
+   Using .visually-hidden
+
+3. What is spinner class? How to create spinners in bootstrap?
+   It shows the loading state in the projects.Their appearance, alignmentand sizimg can be easily customized with
+   the available Bootstrap utility classes. They can be created using the following the class spinner-border. Eg:
+   <div class="spinner-border" role="status">
+     <span class="visually-hidden">Loading...</span>
+   </div> 
+
+
