@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+	<script>
+		function fn_saveData()
+		{
+			alert("Data is send to server");
+			var modalDomObj = document.getElementById('div1');
+			var modalBSObj = bootstrap.Modal.getInstance(modalDomObj);
+			modalBSObj.hide();
+		}  
+    </script>
+  </head>
+  <body>
+    <!-- Button used to  trigger modal -->
+	<button type="button" class="btn btn-primary"data-bs-toggle="modal" data-bs-target="#div1">Show Login</button>
+<!-- Modal -->
+    <div class="modal" id="div1">
+    <div class="modal-dialog">
+    <div class="modal-content">
+    <div class="modal-header">
+		<h5 class="modal-title" id="exampleModalLabel">Login Page</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body  text-primary">
+        <div class="container   border  p-3  m-2 w-75">
+            <form action="server_page.php" class="was-validated">  	 
+                <div class="mb-3 mt-3">
+                    <label for="uname" class="form-label">Username:</label> 
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"><i class="bi bi-person-fill"></i></span>
+                        <input type="text" class="form-control" placeholder="Enter Username" id="uname"  required />
+                         <div class="valid-feedback">Valid.</div>
+                          <div class="invalid-feedback">Please fill out this field.</div>
+                  </div>
+              </div>
+              
+                <div class="input-group mb-3">
+                    <input type="password" class="form-control" placeholder="Enter Password" required />
+                   <span class="input-group-text"><i class="bi bi-key-fill"></i></span>
+              </div>
+           </form>
+      </div>
+        
+    </div>
+	
+	
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      <button type="button" onclick="fn_validuser()" class="btn btn-primary">Login</button>   
+     </div>
+  
+  </div>
+</div>
+</div>
+     
+
+<script>
+    function fn_validuser()
+    {var x=document.getElementById('uname').value;
+        if(x=="Kritika")
+        {alert("Hello User, Welcome to Deloitte");}
+        else{alert("Please enter valid credentials");}
+
+        var modalDomObj= document.getElementById('div1');
+        var modalBSObj= bootstrap.Modal.getInstance(modalDomObj);
+        modalBSObj.hide();
+    
+    }
+</script>
+
+  </body>
+</html>
