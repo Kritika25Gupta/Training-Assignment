@@ -1,0 +1,27 @@
+1. Is it possible to disable JavaScript in browser?  If yes, How to disable javascript in browser?
+   Yes. To disable Javascript in browser follow these steps:
+   Open Google Chrome>Open settings>Privacy and Security>Expand Site settings option>Click JavaScript option>click 
+   don't allow site to use javascript
+
+2. What is the difference between undefined and not defined in JavaScript?
+   undefined: It is a JavaScript keyword that has a special meaning. Everything which gets a space in memory will 
+   contain undefined until we assign a value to that memory space.
+   not defined: In JavaScript, it is one of the reference errors that JavaScript will throw when someone accesses 
+   the variable which is not inside the memory heap.
+
+3. Difference between ==  and ===?
+   The main difference between the == and === operator in javascript is that the == operator does the type 
+   conversion of the operands before comparison, whereas the === operator compares the values as well as the data 
+   types of the operands.
+
+4. What does the isNaN() function?
+   The isNaN () function determines whether a value is an illegal number (Not-a-Number). This function returns true 
+   if the value equates to NaN. Otherwise it returns false.
+
+5. Difference between Client side JavaScript and Server side JavaScript?
+   Client-Side JavaScript (CSJS)
+- It is JavaScript that enables the enables web pages on browsers to run active online content.
+
+   Server-Side JavaScript (SSJS)
+- It is JavaScript that enables back-end access to databases, file systems, and servers.
+
