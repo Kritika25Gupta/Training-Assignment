@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <h3>Mathematical Operations</h3>
+		<hr/>
+        First Number: <input type="number"  id="t1"   />
+        <br/><br/>
+        Second Number: <input type="number"  id="t2"   />
+        <br/><br/>
+        <input  type="button"  value="Add"  onclick="fn_getAdd()"  />
+		<p  id="p1"></p>
+        <input  type="button"  value="Sub"  onclick="fn_getSub()"  />
+		<p  id="p2"></p>
+        <input  type="button"  value="Multiply"  onclick="fn_getMultiply()"  />
+		<p  id="p3"></p>
+        <script>
+            function fn_getAdd()
+            {
+                var  paraObj  =  document.getElementById("p1");		
+				var  txtObj1  =  document.getElementById("t1");
+                var  txtObj2  =  document.getElementById("t2");
+                var fa1 = txtObj1.value;
+                var fa2 = txtObj2.value;
+                var no1= JSON.parse(fa1);
+                var no2= JSON.parse(fa2);
+                var add = no1+no2;
+                paraObj.innerHTML = "Result:" + add;
+            }
+            function fn_getSub()
+            {
+                var  paraObj  =  document.getElementById("p2");		
+				var  txtObj1  =  document.getElementById("t1");
+                var  txtObj2  =  document.getElementById("t2");
+                var fs1 = txtObj1.value;
+                var fs2 = txtObj2.value;
+                var sub = fs1-fs2;
+                paraObj.innerHTML = "Result:" + sub;
+            }
+            function fn_getMultiply()
+            {
+                var  paraObj  =  document.getElementById("p3");		
+				var  txtObj1  =  document.getElementById("t1");
+                var  txtObj2  =  document.getElementById("t2");
+                var fm1 = txtObj1.value;
+                var fm2 = txtObj2.value;
+                var mul = fm1*fm2;
+                paraObj.innerHTML = "Result:" + mul;
+            }
+        </script>
+    </body>
+</html>

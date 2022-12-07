@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .odd{
+                color:green;
+            }
+            .even{
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>JavaScript Programming--Loops</h3>
+		<hr/>
+        <input  type="button"  value="Get Data"  onclick="fn_getData()"  />
+		<p  id="p1"></p>
+        <script>
+            function fn_getData()
+            {
+                var  paraObj  =  document.getElementById("p1"); 		 
+				var ul  = "<ul>";
+				for(var i = 1; i <= 4;  i++)
+				{
+                    if(i%2==0)
+                    {
+					    ul  += "<li class='even'>"+ "Welcome to JavaScript-" + i; 
+                    }
+                    else
+                    {
+                        ul  += "<li class='odd'>"+ "Welcome to JavaScript-" + i; 
+                    }
+				} 
+				ul+="</ul>"
+				paraObj.innerHTML = ul; 
+            }
+        </script>
+    </body>
+</html>

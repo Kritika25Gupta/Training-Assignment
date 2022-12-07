@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays-Ques8</title>
+    <style>
+        th {
+            background-color: aqua;
+        }
+        #tab {
+            border: 3px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dynamic Operations on Arrays in JS</h1>
+    <hr/>
+    <table id="tab"  cellspacing="1" cellpadding="8" class="table">
+    <tr>
+        <th>Courses</th>
+        <th>Courses</th>
+        <th>Courses</th>
+        <th>Courses</th>
+    </tr>
+    </table>
+    <script>
+        var list = ["HTML5" , "CSS3" , "jQuery" , "AngularJS" , "Bootstrap"]
+        paraObj = document.getElementById("tab");
+ 
+        for(var i=0;i<list.length-1;i++)
+        {
+          var newRow = paraObj.insertRow();
+          for(var j=0;j<list.length-1;j++)
+          {
+               var x = 4*i + j;
+               if(x>list.length-1)
+               {
+                x=x%list.length;
+               }
+               var cell = newRow.insertCell();
+            cell.innerHTML = list[x]
+                  }
+        }
+    </script>
+</body>
+</html>

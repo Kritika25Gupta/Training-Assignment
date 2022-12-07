@@ -1,0 +1,13 @@
+1. What are the types of Pop up boxes available in JavaScript ?  Find some more details about pop-boxes?
+a)Alert Box:This popup or dialog box is used to display an alert or warning message to the user. To proceed, the 
+  user must click “OK.”
+  SYNTAX: window.alert(message); or alert(message);
+b)Confirm Box
+It is a popup box used to get permission or confirmation from the user. There are two buttons in the confirm box: 
+“OK” and “Cancel”. To continue, the user must select either “OK” or “Cancel”.
+  SYNTAX:window.confirm(message) or confirm(message);
+c)Prompt Box
+It is a dialog or popup box which is used to get some input from the user before allowing them to move on to the
+next step. This popup box has an input field, “OK” and “Cancel” buttons.
+  SYNTAX:window.prompt(your message,default_value); or prompt(your message,default_value);
+

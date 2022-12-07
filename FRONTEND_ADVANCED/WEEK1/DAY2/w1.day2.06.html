@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays-Ques7</title>
+    <style>
+        table {
+            
+            width:50%;
+        }
+        td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Operations on Arrays</h1>
+    <hr/>
+    <input type="button" value="Show Data" onclick="fn_arraydata()"/><br/><br/>
+    <table id="tab"></table>
+ 
+    <script>
+        function fn_arraydata()
+        {
+            var data = ["HTML5" , "CSS3" , "jQuery" , "AngularJS" , "Bootstrap"]
+            var str="";
+ 
+            for(var i=0; i<data.length; i++)
+            {
+                str += "<tr><td>" + (i+1) + "</td><td>" + data[i] + "</td></tr>"
+            }
+            var tableObj = document.getElementById("tab")
+            tableObj.innerHTML = str;
+            tableObj.style.border = "2px solid black";
+            tableObj.style.padding = "2px";
+        }
+ 
+    </script>
+</body>
+</html>
