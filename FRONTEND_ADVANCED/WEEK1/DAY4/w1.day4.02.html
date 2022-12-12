@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script>
+            var citiesArray  = [ "Hyderabad", "Mumbai",  "Bangalore", "Gurgaon"];
+            var uppercase = citiesArray;
+            var uppers = citiesArray.map(upperCase);
+            function upperCase(str){return str.toUpperCase();}
+            document.writeln("converted to uppercase: " + uppers +"<br>");
+            var s = citiesArray.map(function(str) {
+                return str.slice(0,3);
+            });
+            document.writeln("First three characters of the each items are: " + s +"<br>");
+            var replace = citiesArray.map(str => str.replaceAll('a','@'));
+            document.writeln("First three characters of the each items are: " + replace);
+        </script>
+    </body>
+</html>

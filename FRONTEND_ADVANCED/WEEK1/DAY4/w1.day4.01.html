@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        Number 1:  <input type="number"  id="n1"   />
+        <br/><br/>
+        Number 2: <input type="number"  id="n2"   />
+        <br/><br/>
+        <input  type="button"  value="Get Power"  onclick="fn_getPower()"  />
+		<p  id="p1"></p>
+        <hr/>
+        Enter the string to get length: <input type="text"  id="t1">
+        <br/><br/>
+        <input  type="button"  value="Get Length"  onclick="fn_getLength()"  />
+		<p  id="p2"></p>
+        <br/>
+        <script>
+            var arr = [1,2,3,4,5,6,7,8,9,10];
+            var even=[];
+            arr.forEach(no=>{
+                if(no %2==0){
+                    even.push(no);
+                }
+            })
+            document.writeln(arr);
+            document.writeln("<br>");
+            document.writeln("No. of even numbers in the given array:", even.length);
+            function fn_getPower()
+            {
+                var  paraObj  =  document.getElementById("p1");
+                var  xp  =  document.getElementById("n1");		
+				var  yp =  document.getElementById("n2");
+                var x = xp.value;
+                var y = yp.value;
+                let z= Math.pow(x,y);
+                paraObj.innerHTML = "Power value:" +  z;
+            }
+            document.writeln("<hr/>");
+            function fn_getLength()
+            {
+                var  paraObj2  =  document.getElementById("p2");
+                var  tl  =  document.getElementById("t1").value;
+                var t=tl.length;
+                paraObj2.innerHTML = "String Length:" +  t;
+            }
+            
+        </script>
+    </body>
+</html>
