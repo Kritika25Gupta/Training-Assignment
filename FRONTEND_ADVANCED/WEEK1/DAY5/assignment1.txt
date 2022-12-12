@@ -1,0 +1,21 @@
+1. How to add events to html elements at runtime using javascript?
+   There are two common ways to attach event to the elements:
+a)Using Element Attributes: Attributes are extension to the HTML elements. They provide extra functionality to the
+  elements. Eg:
+        <p>
+          <button  id ="btn" onclick="btnClick();"> Click Button </button>
+        </p>
+In the above example you can see we have added onclick event attribute to the button element.
+b) Use addEventListener function to attach an event attribute to an element without adding attribute to the 
+   element directly. Eg:
+        <p>
+          <button id ="btn2">Click Button</button>
+        </p>
+addEventListener takes two parameters, first is an event name and second is a function which will do the action.
+
+2. How to use keypress, keyup, keydown events?
+keydown: This event is triggered when a key is pressed down.
+keypress: This event is triggered when a key is pressed. This event fails to recognise keys such as tab, shift, 
+ctrl, backspace etc.
+keyup: This event is triggered when a key is released.
+The onKeyDown, onKeyPress, and onKeyUp events can be used to detect these events respectively.
