@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script>
+            class Employee
+            {
+                constructor(x,y,z)
+                {
+                    this.empno=x;
+                    this.ename=y;
+                    this.job=z;
+                }
+                showDetails()
+                {
+                    document.writeln("Empno: "+this.empno+"<br>"+"Ename: "+this.ename+"<br>"+" Job: "+this.job);
+                }
+            }
+        var obj=new Employee(12345,"Jacob","Analyst");
+        obj.showDetails();
+
+        </script>
+    </body>
+</html>

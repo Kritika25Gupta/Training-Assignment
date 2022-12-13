@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <h3>Data Filtration using Javascript</h3>
+        <hr/>
+        Search Value: <input type="text"  id="t1"   />
+        <input type="button"  onclick="fn_FindByEmpNo()"  value="Find By Empno" />
+        <input type="button"  onclick="fn_FindByJob()"  value="Find By Job" /><br><br>
+        <table id="tabb" border="2" cellpadding="5" cellspacing="0">
+            <tr>
+                <th>Empno</th>
+                <th>Ename</th>
+                <th>Job</th>
+                <th>Salary</th>
+                <th>Deptno</th>
+            </tr>
+        </table>
+        <script>
+            var tableObj=document.getElementById("tabb");
+            var emp1=document.getElementById("t1");
+            var list = [{Empno:12345,Ename:"John",Job:"Manager",Salary:40000,Deptno:5},
+            {Empno:45732,Ename:"Sarah",Job:"Manager",Salary:60000,Deptno:4},
+            {Empno:12365,Ename:"Kane",Job:"Analyst",Salary:30000,Deptno:1},
+            {Empno:12561,Ename:"Jacob",Job:"Consultant",Salary:50000,Deptno:3},
+            {Empno:45364,Ename:"Jessica",Job:"Analyst",Salary:30000,Deptno:1},
+            {Empno:43567,Ename:"Kelly",Job:"Consultant",Salary:50000,Deptno:2},
+            {Empno:43347,Ename:"Kris",Job:"HR Manager",Salary:100000,Deptno:2}
+        ]
+        function fn_FindByEmpNo()
+        {
+            var result=emp1.value;
+            var found = list.find(x=>x.Empno==result);
+            tableObj.innerHTML=`<tr><th>Empno</th><th>Ename</th><th>Job</th><th>Salary</th><th>Deptno</th></tr>`;
+            //tableObj.innerHTML+=`<tr><td>${found.Empno}</td><td>${found.Ename}</td><td>${found.Job}</td><td>${found.Salary}</td><td>${found.Deptno}</td></tr>`;
+            var row=tableObj.insertRow();
+            var cell1=row.insertCell();
+            cell1.innerHTML=found.Empno;
+            var cell2=row.insertCell();
+            cell2.innerHTML=found.Ename;
+            var cell3=row.insertCell();
+            cell3.innerHTML=found.Job;
+            var cell4=row.insertCell();
+            cell4.innerHTML=found.Salary;
+            var cell5=row.insertCell();
+            cell5.innerHTML=found.Deptno;
+
+
+        }
+        function fn_FindByJob()
+        {
+            var result2=emp1.value;
+            var found2 = list.filter(y=>y.Job==result2);
+            tableObj.innerHTML=`<tr><th>Empno</th><th>Ename</th><th>Job</th><th>Salary</th><th>Deptno</th></tr>`;
+            for(let i of found2)
+            {
+            //tableObj.innerHTML+=`<tr><td>${i.Empno}</td><td>${i.Ename}</td><td>${i.Job}</td><td>${i.Salary}</td><td>${i.Deptno}</td></tr>`;
+            var row=tableObj.insertRow();
+            var cell1=row.insertCell();
+            cell1.innerHTML=i.Empno;
+            var cell2=row.insertCell();
+            cell2.innerHTML=i.Ename;
+            var cell3=row.insertCell();
+            cell3.innerHTML=i.Job;
+            var cell4=row.insertCell();
+            cell4.innerHTML=i.Salary;
+            var cell5=row.insertCell();
+            cell5.innerHTML=i.Deptno;
+            }
+        }
+        </script>
+
+    </body>
+</html>

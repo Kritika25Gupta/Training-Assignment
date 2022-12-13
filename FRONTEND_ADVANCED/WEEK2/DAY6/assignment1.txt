@@ -1,0 +1,11 @@
+1. How to add / remove events dynamically without using event attributes (eg:  onclick, ...)
+The built-in method addEventListener() allows you to attach an event listener to an HTML element. It accepts two 
+parameters:
+The event type to listen to and the callback function to run when the event is triggered:
+        Element.addEventListener(type, callbackFn);
+The event type to return to and the callback function to run when the event is triggered:
+        Element.removeEventListener(type, callbackFn);
+
+ 	
+
+ 
