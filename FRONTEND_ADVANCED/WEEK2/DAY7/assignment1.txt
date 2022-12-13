@@ -1,0 +1,12 @@
+1. What is setInterval()  and setTimeout() methods in JavaScript?
+   JavaScript setInterval() Method: The setInterval() method repeats a given function at every given time interval. 
+   Syntax: window.setInterval(function, milliseconds);
+   JavaScript setTimeout() Method: This method executes a function, after waiting a specified number of
+   milliseconds. It is executed only once.
+   Syntax: window.setTimeout(function, milliseconds);
+
+2. What is Asynchronous?
+   It means allowing the function to be executed immediately, there is no need to wait for the current execution 
+   completion, it will be for further execution.
+
+

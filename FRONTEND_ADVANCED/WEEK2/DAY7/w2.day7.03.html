@@ -1,0 +1,43 @@
+<html>
+<head></head>
+<body>
+<h3>Asynchronous Programming in  JavaScript</h3>
+	<hr/> 
+	
+	<button  onclick="fn_getData()">Get Data </button>
+	<br/><br/>
+	<table id="tab" border="2" cellpadding="5" cellspacing="0">
+        <tr>
+            <th>Id</th>
+            <th>Email</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Avatar</th>
+        </tr>
+    </table>
+	<script>	 
+	async function fn_getData()
+	{
+        try
+        {
+		var tableObj = document.getElementById("tab");
+		let url = "https://reqres.in/api/users";
+        let response =  await  fetch(url);
+        let resData =    await  response.json();
+        tableObj.innerHTML=`<tr><th>Id</th><th>Email</th><th>First Name</th><th>Last Name</th><th>Avatar</th></tr>`;
+		for(let item of   resData.data)
+			{
+                tableObj.innerHTML+=`<tr><td>${item.id}</td><td>${item.email}</td><td>${item.first_name}</td><td>${item.last_name}</td><td><img src='${item.avatar}'></td></tr>`;
+            }					
+        }
+        catch(error)
+				 {
+					tableObj.innerHTML   ="";
+                    tableObj.innerHTML  +=  "<tr colspan='5'><td>There is an issue to fetch data from server. Please try after sometime.</td></tr>";
+				 }					
+        
+	}  
+
+	</script>	 
+</body>
+</html>
