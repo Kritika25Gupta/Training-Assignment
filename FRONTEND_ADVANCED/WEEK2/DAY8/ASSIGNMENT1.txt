@@ -1,0 +1,21 @@
+1. How to hide html element using JavaScript?
+a) Using the hidden property
+   SYNTAX: document.getElementById('element').hidden = true
+b) Using the style.display property
+   SYNTAX: document.getElementById('element').style.display = 'none'
+c) Using the style.visibility property
+   SYNTAX: Using the style.visibility property
+
+2. How to change text color of all paragraphs in the document using JavaScript?
+   Syntax: var x = document.getElementsByTagName("p") 
+        for (let y of x)
+        {y.style.color="red"};
+
+3. How to select all textboxes using jQuery selector?
+   Using querySelectorAll() we'll select all the paragraphs in the document.Then we'll use a for loop and change 
+   the text color using element.style.color property.
+   
+4. What is the difference between   "this" and  $(this) in jquery programming?
+   The this Keyword is a reference to DOM elements of invocation. We can call all DOM methods on it. $() is a 
+   jQuery constructor and in $(this), we are just passing this as a parameter so that we can use the jQuery 
+   function and methods.

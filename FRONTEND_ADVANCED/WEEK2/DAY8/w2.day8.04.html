@@ -1,0 +1,21 @@
+<html>
+    <head></head>
+    <body>
+        <img class="c1" src="I1.jpg" width="100"  height="100" >
+        <img class="c1" src="I2.jpg" width="100"  height="100" >
+        <img class="c1" src="I3.jpg" width="100"  height="100" >
+        <img class="c1" src="I0.jpg" width="100"  height="100" ><br>
+        <script  src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
+        <img   src="I1.jpg"  id="bigImg"  border="2"  width="340"  height="340"  />
+        <script>
+            $(document).ready(function()
+             { y=setInterval(function() 
+                 {
+                    var x = Math.floor((Math.random() * 10));
+                    var a = x%4;                  
+                   $("#bigImg").attr("src", "I"+a+".jpg");       
+                 },Math.floor((Math.random()*1000)));
+             });
+        </script>
+    </body>
+</html>

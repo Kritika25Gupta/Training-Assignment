@@ -1,0 +1,66 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <h1 align="center" style="font-size:3rem">Timer</h1>
+    <hr>
+    <br><br>
+    <div>
+    <table id="tab"  style="font-size:3.8rem;margin:auto;"></table>
+    </div>
+    <div style="text-align:center">
+    <br>
+    <input type="button" value="Set" id="b1" style="margin-right:10px;font-size: 1.5rem;background-color: red;">
+    <input type="button" value="Clear" id="b2" style="margin-left:10px;font-size: 1.5rem;background-color: green;">
+    </div>
+    <script  src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
+    <script>
+        function display()
+        {
+            $("#tab").html("<tr><td>"+h+"</td><td> : </td><td>"+m+"</td><td> : </td><td>"+s+"</td></tr>");
+        }
+        function count()
+        {
+            s++;
+            if(s>59)
+            {
+                m++;
+                s=0;
+            }
+            if(m>59)
+            {
+                m=0;
+                s=0;
+                h++;
+            }
+            display(); 
+        }
+        function reset()
+        {
+         s=0;
+         m=0;
+         h=0;
+        display();
+        }
+        var s=0;
+        var m=0;
+        var h=0;
+        $("#tab").attr("border","2");
+        $("#tab").attr("cellpadding","10");
+        $("#tab").attr("cellspacing","0");
+        display();
+        $("#b2").click(function(){
+            clearInterval(x);
+            reset();
+        })
+
+        $("#b1").click(function(){
+            //var count1 = 0;
+            //count1++;
+        //if(count1>0)
+          //$('#b1').prop('disabled', true);
+             x=setInterval( count,1000);
+        }) 
+    </script>
+    </body>
+</html>
