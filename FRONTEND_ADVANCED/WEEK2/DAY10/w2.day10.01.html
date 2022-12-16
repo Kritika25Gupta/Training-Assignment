@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <style>
+            .c1
+            {
+                font-weight: bold;
+            }
+            .c2
+            {
+                text-decoration: underline;
+            }
+            .c3
+            {
+                font-style: italic;
+            }
+            .btn
+            {
+                background-color: blue;
+                border: 2px solid black;
+            }
+        </style>
+    </head>
+    <body>
+     <input type="button" id="b1"  value="Bold"/>
+	 <input type="button" id="b2"  value="Underline"/>
+	 <input type="button" id="b3"  value="Italic"/>
+     <p style="border: 2px solid blue;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sit doloremque asperiores quam dolores sequi illo alias similique assumenda sapiente, corrupti quas delectus tempore dicta debitis enim amet possimus non.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum excepturi ipsa magnam eligendi doloribus, in nihil! Ex, est ea. Eveniet harum officiis doloribus ipsa atque! Reprehenderit mollitia beatae iste quis.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem illo similique quisquam ducimus beatae repudiandae hic perspiciatis. Praesentium voluptate, alias ipsa doloremque quis dignissimos ea, unde voluptas commodi illum maxime.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, illo facilis ipsum suscipit cum magnam error perspiciatis, harum maiores officiis iste ratione reiciendis quo impedit, dolor necessitatibus. Id, nulla optio!
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto magnam doloremque tempore assumenda quaerat nam hic cumque, placeat numquam itaque. Repellendus veniam cum reprehenderit eveniet enim provident atque expedita architecto!
+     </p>
+     <script  src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+     <script>
+        $("#b1").click(function()
+        {
+            $("p").toggleClass("c1");
+            $("#b1").toggleClass("btn");
+        })
+        $("#b2").click(function()
+        {
+            $("p").toggleClass("c2");
+            $("#b2").toggleClass("btn");
+        })
+        $("#b3").click(function()
+        {
+            $("p").toggleClass("c2");
+            $("#b3").toggleClass("btn");
+        })
+     </script>
+    </body>
+</html>
