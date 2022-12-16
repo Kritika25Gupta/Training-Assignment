@@ -1,0 +1,35 @@
+<html>
+    <head></head>
+    <body>
+        <h3> jQuery Programming  - DOM Manipulation</h3>
+	    <hr />
+        Product Name: <input type="text" id="t1" placeholder="Product Name"><br><br>
+        Units: <input type="text" id="t2" placeholder="Units"><br><br>
+        Customer Name: <input type="text" id="t3" placeholder="Customer Name"><br><br>
+        Contact Number: <input type="text" id="t4" placeholder="Contact Number"><br><br>
+        <input type="button" value="Add details" id="b1"><br><br>
+        <table id="table1" border="2" width="400px">
+            <tr>
+                <th>Product Name</th>
+                <th>Units</th>
+                <th>Customer Name</th>
+                <th>Contact Number</th>
+            </tr>
+        </table>
+        <script  src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+        <script>
+            //let  str  = "<tr>  <td>iPad 14</td>  <td>47000</td>  <td>3</td>  </tr>";
+           $(document).ready(function()
+           {
+                $("#b1").click(function(){
+                let a= $("#t1").val();
+                let b= $("#t2").val();
+                let c= $("#t3").val();
+                let d= $("#t4").val();
+                let str="<tr><td>"+a+"</td><td>"+b+"</td><td>"+c+"</td><td>"+d+"</td></tr>"
+                $("#table1").append(str);
+                })
+           })
+        </script>
+    </body>
+</html>

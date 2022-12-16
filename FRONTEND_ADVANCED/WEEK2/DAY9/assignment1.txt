@@ -1,0 +1,17 @@
+1. What is eval() method in JavaScript? How to use it? Check with an example?
+   The eval() method evaluates an expression or executes an argument.
+   SYNTAX: eval(string)
+   We should not use eval() beacusr evaluating a javascript from a string is a big security risk.Malicious code can
+   run inside your application without permission or third-party code can see the scope of your application, 
+   which can lead to possible attacks.
+
+2. What is the purpose of prev() and next() methods in jQuery?
+   prev(): The prev() method returns the previous sibling element of the selected element.
+           SYNTAX:$(selector).prev(filter)
+   next(): The next() method returns the next sibling element of the selected element.
+           SYNTAX:$(selector).next(filter)
+
+3. How to delete all rows in a table except first row?
+   $('#btn').click(function () {
+    $("#rTable").find("tr:gt(0)").remove();
+   });
