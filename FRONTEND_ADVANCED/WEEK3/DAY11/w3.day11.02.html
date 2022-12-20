@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <style>
+            .error
+		{
+			color : red;
+		}
+        </style>
+    </head>
+    <body>
+        Person name  :  <input type="text"  id="t1" />  
+	    <br/><br/>
+	    Person Contact Number :  <input type="text"  id="t4" />  
+	    <br/><br/>
+        Vehicle Number :  <input type="text"  id="t2" />  
+	    <br/><br/>
+        City Name :  <input type="text"  id="t3" />  
+	    <br/><br/>	
+	<script  src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script>
+        $(document).ready(function()
+        {
+            $('#t1').keyup(function() {
+                $("#sp1").remove();
+                var inputVal = $("#t1").val();
+                var nameReg = /^[a-z A-Z]{1,10}$/;
+                if(  nameReg.test(inputVal)  ==  false  &&  inputVal.length >  0) 
+                    {
+                        $(this).after('<span id="sp1"  class="error"> 10 Word characters only</span>');
+                    }
+            });
+            $('#t4').keyup(function() {
+                $("#sp2").remove();
+                var inputVal2 = $("#t4").val();
+                var numberReg = /^[0-9]{1,10}$/;
+                if(  numberReg.test(inputVal2)  ==  false  &&  inputVal2.length >  0) 
+                    {
+                        $(this).after('<span id="sp2"  class="error"> Numeric characters only</span>');
+                    }
+            });
+            $('#t2').keyup(function() {
+                $("#sp3").remove();
+                var inputVal3 = $("#t2").val();
+                var vehicleReg = /^[A-Z]{1,2}[0-9]{1,2}[A-Z]{1,2}[0-9]{1,4}$/;
+                if(vehicleReg.test(inputVal3)  ==  false && inputVal3.length>0) 
+                    {
+                        $(this).after('<span id="sp3"  class="error"> Enter details in specified format </span>');
+                    }
+            });
+            $('#t3').keyup(function() {
+                $("#sp4").remove();
+                var inputVal4 = $("#t3").val();
+                var cityReg = /^[A-Z]{1,}$/;
+                if(cityReg.test(inputVal4)  ==  false && inputVal4.length>0) 
+                    {
+                        $(this).after('<span id="sp4"  class="error"> Only Capital Letters </span>');
+                    }
+            });
+        })
+    </script>
+    </body>
+</html>

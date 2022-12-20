@@ -1,0 +1,24 @@
+<html>
+    <head></head>
+    <body>
+        Input String: <input type="text" id="t1" placeholder="Input">
+        <input type="button" value="Get Data" id="b1"><br><br>
+        <ul id="unordered"></ul>
+        <script  src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+        <script>
+            $(document).ready(function()
+            {
+                $("#b1").click(function()
+                {
+                    let a =$("#t1").val().split(',');
+                    console.log(a);
+                    $("#unordered").html("");
+                    for(i=0;i<a.length;i++)
+                    {
+                        $("#unordered").append("<li>"+a[i].toUpperCase()+"</li>");
+                    }
+                })
+            })
+        </script>
+    </body>
+</html>
