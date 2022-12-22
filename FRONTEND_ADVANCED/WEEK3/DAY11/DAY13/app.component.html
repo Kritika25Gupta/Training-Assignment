@@ -1,0 +1,14 @@
+<div>
+  <h2>EXPLORE EVENTS</h2>
+</div>
+<div *ngFor="let item of eventsArray">
+  <a href="#">{{item.title}}</a>
+  <br>
+  <span style="font-weight: bold;">Date:</span><span>{{item.Date}}</span>
+  <span style="font-weight: bold;">  Format:</span><span>{{item.Format}}</span>
+  <span style="font-weight: bold;">  Time:</span><span>{{item.Time}}</span>
+  <br><br>
+</div>
+<div class="footer">
+  <span>Please help us improve our communication by telling us what you think of this email.</span>
+</div>
