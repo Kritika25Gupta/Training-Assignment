@@ -1,0 +1,60 @@
+{
+  "data": [
+    {
+      "empno": 23456,
+      "ename": "Scott",
+      "job": "Software Engineer",
+      "sal": "360000",
+      "deptno": 1
+    },
+    {
+      "empno": 634573,
+      "ename": "Kate",
+      "job": "Accountant",
+      "sal": "40000",
+      "deptno": 5
+    },
+    {
+      "empno": 63262,
+      "ename": "Kim",
+      "job": "Consultant",
+      "sal": "45000",
+      "deptno": 2
+    },
+    {
+      "empno": 64683,
+      "ename": "Michael",
+      "job": "Mechanical Engineer",
+      "sal": "70000",
+      "deptno": 8
+    },
+    {
+      "empno": "4375",
+      "ename": "hejfgej",
+      "job": "ghgwfd",
+      "sal": "215",
+      "deptno": "643"
+    },
+    {
+      "empno": "23121",
+      "ename": "Kritika",
+      "job": "CEO",
+      "sal": "523551352535",
+      "deptno": "5"
+    },
+    {
+      "empno": "4656",
+      "ename": "Samriddhi",
+      "job": "CEO",
+      "sal": "5264532374652736",
+      "deptno": "4"
+    },
+    {
+      "empno": 634574,
+      "ename": "sam",
+      "job": "consultant",
+      "sal": "261261",
+      "deptno": "2"
+    }
+  ]
+}
