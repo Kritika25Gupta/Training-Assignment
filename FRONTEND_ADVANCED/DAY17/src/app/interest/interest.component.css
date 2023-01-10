@@ -1,0 +1,15 @@
+fieldset{
+    background-color: rgb(189, 103, 206);
+    width:50%;
+    margin: auto;
+    padding: 10px;
+    align-items: center;
+}
+h2{
+    color: rgb(25, 67, 27);
+}
+span{
+    color: rgb(25, 67, 27);
+    font-weight: bold;
+    font-size: 15px;
+}

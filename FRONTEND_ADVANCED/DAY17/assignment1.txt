@@ -1,0 +1,7 @@
+1. What is data binding in Angular? Why do we use it?
+   Data binding is the core concept of Angular 8 and used to define the communication between a component and 
+   the DOM.
+2. How to get index of the current item while using *ngFor?
+   Declare a variable inside *ngFor directive using let or as keyword. for instance say indexofelement or simply i.
+   Assign the variable value to index.
+   And display the index of ngFor element using angular expression.
