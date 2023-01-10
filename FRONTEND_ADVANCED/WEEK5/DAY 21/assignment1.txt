@@ -1,0 +1,24 @@
+1. a. What is MVC and MVVM?
+   b. What is Single Responsibility Principle?
+
+a) The full form MVC is Model View Controller.In this architecture, a component is built to handle specific 
+development aspects of an application. MVC separates the business logic and presentation layer from each other. 
+This architectural pattern mainly used for desktop graphical user interfaces (GUIs).
+The full form of MVVM is Model–View–ViewModel. The view model of MVVM is a value converter that means that it is
+view model’s responsibility for exposing the data objects from the Model in such a way that objects are easily
+managed and presented.
+b)The Single Responsibility Principle is the first principle of SOLID principles. It is the fundamental principle 
+of object-oriented programming that determines how we should design classes.The Single Responsibility Principle 
+states that:Each software module should have one and only one reason to change.
+In other words, a class should have only one responsibility and therefore it should have only one reason to change
+its code. If a class has more than one responsibility, then there will be more than one reason to change the class
+
+2.  What are keys in React JS? How keys are involving  in array processing?
+A “key” is a special string attribute you need to include when creating lists of elements in React. Keys are used 
+in React to identify which items in the list are changed, updated, or deleted. In other words, we can say that keys
+are used to give an identity to the elements in the lists.Example:
+const numbers = [ 1, 2, 3, 4, 5 ];
+const updatedNums = numbers.map((number)=>{
+return <li key={index}>{number} </li>;
+});
+
