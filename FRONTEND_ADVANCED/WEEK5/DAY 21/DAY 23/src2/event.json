@@ -1,0 +1,76 @@
+{
+    "event": [
+    {
+        "id":1,
+        "genre":"workshop",
+        "name":"Online Meditation & Breath Workshop",
+        "ticketprice":"free",
+        "mode":"online",
+        "location":"zoom"
+    },
+    {
+        "id":2,
+        "genre":"workshop",
+        "name":"Smart Beta ETFs with Chintan Haria",
+        "ticketprice":99,
+        "mode":"online",
+        "location":"paytm insider"
+    },
+    {
+        "id":3,
+        "genre":"workshop",
+        "name":"Terence Lewis Dance- Bollywood Tutorial",
+        "ticketprice":300,
+        "mode":"online",
+        "location":"paytm insider"
+    },
+    {
+        "id":4,
+        "genre":"theatre and art",
+        "name":"Tughlaq-A rehearsed reading",
+        "ticketprice":149,
+        "mode":"online",
+        "location":"paytm insider"
+    },
+    {
+        "id":5,
+        "genre":"theatre and art",
+        "name":"Characterization and Acting-Teekam Joshi",
+        "ticketprice":99,
+        "mode":"online",
+        "location":"paytm insider"
+    },
+    {
+        "id":6,
+        "genre":"theatre and art",
+        "name":"H2O",
+        "ticketprice":150,
+        "mode":"online",
+        "location":"paytm insider"
+    },
+    {
+        "id":7,
+        "genre":"comedy",
+        "name":"COMICS IN THE ROOM",
+        "ticketprice":"free",
+        "mode":"online",
+        "location":"zoom"
+    },
+    {
+        "id":8,
+        "genre":"comedy",
+        "name":"Comedy 101 Coaching: 1 Year Comedy Training & Membership Program",
+        "ticketprice":"14500",
+        "mode":"online",
+        "location":"zoom"
+    },
+    {
+        "id":9,
+        "genre":"comedy",
+        "name":"Lol From Home|Zoom Mic",
+        "ticketprice":"free",
+        "mode":"online",
+        "location":"zoom"
+    }
+]
+}
